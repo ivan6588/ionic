@@ -1,0 +1,20 @@
+
+  <ion-menu side="start" contentId="principal" menuId="first">
+    <ion-header text>
+      <ion-toolbar >
+        <ion-title color="light" >
+          <img src="http://principado.com.mx/wp-content/uploads/2015/01/principado.png" class="logo-size" alt="logo">
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item *ngFor="let c of componentes | async" [routerLink]="c.redirectTo">
+            <ion-icon  [name]="c.icon" color="appcolor"></ion-icon>
+            <ion-label color="appcolorsecondary" padding >{{c.name}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>

@@ -1,0 +1,12 @@
+[
+    {
+      "icon": "paper",
+      "name": "Capacitacion",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "chatbubbles",
+      "name": "Comunicados",
+      "redirectTo": "/alert"
+    }
+  ]
